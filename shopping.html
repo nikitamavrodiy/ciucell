@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiuCell
+    </title>
+    <link rel="stylesheet" href="myStyle.CSS">
+</head>
+<body>
+    <nav>
+    <div class="logo"><img src="logo.png" alt="Company Logo"></div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="items.html">Items</a>
+        <a href="shopping.html" class="active">Shop Online</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</nav>
+    <div class="page">
+        <h2>Shop Online</h2>
+        <form id="shopping-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Properties</th>
+                        <th>Number of Items</th>
+                        <th>Cost ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="item" value="book1"> Student Pack</label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="book1-property" value="30"> Basic ($30)</label> <br>
+                            <label><input type="radio" name="book1-property" value="45"> +5GB  ($45)</label> <br>
+                            <label><input type="radio" name="book1-property" value="85"> +15GB ($85)</label> <br>
+                        </td>
+                        <td>
+                            <select name="book1-quantity">
+                                <option value="0">Units</units>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="None">None</option>
+                            </select>
+                        </td>
+                        <td class="cost" id="cost1"><p>0</p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="item" value="book2"> Teacher Pack</label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="book2-property" value="50"> Basic ($50)</label> <br>
+                            <label><input type="radio" name="book2-property" value="75"> +5GB ($75)</label> <br>
+                            <label><input type="radio" name="book2-property" value="120"> +15GB ($120)</label> <br>
+                        </td>
+                        <td>
+                            <select name="book2-quantity">
+                                <option value="0">Units</units>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="None">None</option>
+                            </select>
+                        </td>
+                        <td class="cost" id="cost2"><p>0</p></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label><input type="checkbox" name="item" value="book3"> Mega Pack</label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="book3-property" value="180"> Basic ($180)</label> <br>
+                            <label><input type="radio" name="book3-property" value="220"> +5GB ($220)</label> <br>
+                            <label><input type="radio" name="book3-property" value="290"> +15GB ($290)</label> <br>
+                        </td>
+                        <td>
+                            <select name="book3-quantity">
+                                <option value="0">Units</units>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="None">None</option>
+                            </select>
+                        </td>
+                        <td class="cost" id="cost3"><p>0</p></td>
+                        <tr>
+                            <td>
+                                <label><input type="checkbox" name="item" value="book4"> CIU Special Pack </label>
+                            </td>
+                            <td>
+                                <label><input type="radio" name="book4-property" value="100"> Basic ($100)</label> <br>
+                                <label><input type="radio" name="book4-property" value="150"> +5GB  ($150)</label> <br>
+                                <label><input type="radio" name="book4-property" value="210"> +15GB ($210)</label> <br>
+                            </td>
+                            <td>
+                                <select name="book4-quantity">
+                                    <option value="0">Units</units>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="None">None</option>
+                                </select>
+                            </td>
+                            <td class="cost" id="cost4">
+                                <p>0</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <section id="total-sec">
+                                    <div id="total-sec-div-1">
+                                        <label>Total Cost</label>
+                                    </div>
+                                    <div id="total-sec-div-2">
+                                        <p id="tax-discount">Tax/Discount: $0</p>
+                                        <p id="total-cost">Total Cost: $0</p>
+                                    </div>
+                                </section>
+                            </td>
+                            <td>
+                                <button type="button" name="calc-button" onclick="calculateTotal()">Calculate</button>
+                            </td>
+                            <td class="cost" id="total-cost-before-tax">
+                                <p>0$</p>
+                            </td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+ 
+    <div class="footer">
+        <h3>Contributors</h3>
+        <div class="contributors">
+            <a href="https://www.instagram.com/efekemalkayis/" target="_blank">Efe Kemal Kayış</a>
+            <a href="https://www.instagram.com/_berk_371/" target="_blank">Berk Elmalı</a>
+            <a href="https://www.instagram.com/mrmanik0_0/" target="_blank">Nikita Mavrodiy</a>
+        </div>
+    </div>
+</body>
+</html>

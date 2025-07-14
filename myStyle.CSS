@@ -1,0 +1,385 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {   
+    background-color:#0098fdfc;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+#banner{
+  margin-left: 200px;
+  width: 80%;
+  width: 300px;  
+  height: auto;  
+  text-align: center;  
+  padding: 15px;  
+}
+
+img{
+    width: 80%;
+
+}
+
+nav img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0098fdfc;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #5cbbfafc;
+    border-radius: 5px;
+}
+
+.page {
+  box-sizing: border-box;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+  .page img {
+    object-fit: cover;
+    width: 100%;
+
+  } 
+
+button {
+    background-color: #5cbbfafc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0098fdfc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form select {
+  width: 6em;
+  padding: 2px;
+  border: 1px solid  gray;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid black;
+    background-color: rgba(115, 113, 109, 0.1);
+}
+
+#total-sec {
+  display: flex;
+  align-items: center;
+}
+
+#total-sec div, #total-sec div p {
+  margin-right: 10px;
+  margin: 0px 2px 10px 0px;  
+}
+
+#total-sec-div-2 {
+  background-color: #333333ba;
+  padding: 5px 5px 0px 5px;
+}
+
+.cost {
+  text-align: center;
+  padding: 0px 0px;
+}
+
+.cost p {
+  box-sizing: border-box; 
+  border: 1px solid #555;
+  width: 60px;
+  margin: auto;
+  background-color: #6d6c6c9d;
+  align-items: center;
+  text-align: center;
+}
+
+table td button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #6d6c6c9d; 
+  border: 1px solid black;
+  padding: 5px 15px 2px 13px;
+}
+
+table th {
+  background-color: #716f6fc5;
+}
+
+p #tax-discount {
+  color: red;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#homepage {
+  object-fit: cover;
+  max-height: 700px;
+  width: 100%;
+}
+
+.page h1 {
+  text-align: center;
+}
+
+.img{
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.item {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.item img {
+  animation: slideIn 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.item img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.item h3 {
+  margin: 10px 0;
+}
+
+.item p {
+  color: #555;
+}
+
+
+input.error, textarea.error {
+  border: 2px solid #ff0000;
+  background-color: #ffe6e6;
+}
+
+input.error:focus, textarea.error:focus {
+  outline: none;
+  box-shadow: 0 0 5px red;
+}
+
+#buttontd{
+  margin-top: 20px;
+}
+
+.products {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;    
+  height: 45vw;
+  padding: 30px;
+  margin-left: 4px;
+}
+
+.left-product {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  background-color: white;
+  height: inherit;
+  border-right: 5px solid white;
+  display: block;
+}
+
+.left-product img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: inherit;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 10px;
+  padding: 10px 20px 10px 0px;
+}
+
+.right-product {
+  box-sizing: border-box;
+  float: right;
+  width: 50%;
+  background-color: white;
+  height: inherit;
+  border-left: 5px solid white;
+  display: block;
+}
+
+.right-product img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: inherit;
+  transition: all 0.3s;
+  overflow: hidden;
+  padding: 10px 0px 10px 20px;
+}
+
+.left-product img:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2);     
+  transition: all 0.3s ;
+}
+
+
+.right-product img:hover  {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);     
+  transition: all 0.3s ;
+}
+
+
+.footer {
+  background-color: #0098fdfc;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+.footer h3 {
+  margin: 0 0 10px 0;
+}
+.footer .contributors {
+  margin: 10px 0;
+}
+.footer .contributors a {
+  color: black; 
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+.footer .contributors a:hover {
+  color: blue;
+}
+.footer .policies a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer .policies a:hover {
+  color: blue;
+}
+#footeritems{
+  margin-top: 25%;
+}

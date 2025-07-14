@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiuCell</title>
+    <link rel="stylesheet" href="myStyle.CSS">
+</head>
+<body>
+ 
+    <nav>
+    <div class="logo"><img src="logo.png" alt="Company Logo"></div>
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="items.html">Items</a>
+        <a href="shopping.html">Shop Online</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </div>
+</nav>
+
+    <div class="page">
+        <h2>Contact Us</h2>
+        <form id="contact-form" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+            <label for="Gender">Gender:</label>
+            <div class="gender-options"></div>
+            <label>
+                <input type="radio" name="gender" value="male" required>Male  
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required>Female  
+            </label>
+          
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="contact-result"></p>
+    </div>
+    </div>
+<script src="script.js"></script>
+
+ 
+    <div class="footer">
+        <h3>Contributors</h3>
+        <div class="contributors">
+            <a href="https://www.instagram.com/efekemalkayis/" target="_blank">Efe Kemal Kayış</a>
+            <a href="https://www.instagram.com/_berk_371/" target="_blank">Berk Elmalı</a>
+            <a href="https://www.instagram.com/mrmanik0_0/" target="_blank">Nikita Mavrodiy</a>
+        </div>
+    </div>
+</body>
+</html>
